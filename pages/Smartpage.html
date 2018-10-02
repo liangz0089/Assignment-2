@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Page</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<script type="text/javascript" src="../js/Javascript.js"></script>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+</head>
+<body id="body1" onload="create()">
+	<div class="container">
+		<div class="col-md-2">
+			<div class="text-center">
+				<br>
+					<button class="btn btn-primary"onclick="displayDate()">DisplayTime</button>
+					<p id="demo" class="lead"></p>
+			</div>
+			<br><br><br><br><br>  
+			<div class="breadcrumb">	  		
+		    	<ul class="nav nav-pills nav-stacked">
+		    		<h2 class="lead">Yunshu Liang</h2>
+		    		<li><a href="Homepage.html">Homepage</li></a>
+		    		<li><a href="About.html">About</a></li>
+		    		<li><a href="Education Experience.html">Education</a></li>
+		    		<li><a href="Work Experience.html">Work Experience</a></li>
+		    		<li><a href="Awards.html">Awards</a></li>
+		    		<li><a href="Smartpage.html">Smartpage</a></li>
+		    	</ul>
+		    </div>
+		</div>
+		<div class="col-md-8">
+			<div class="text-center">				
+				<div>
+					<h1>Rate My University</h1>
+					<hr>
+				</div>
+				<ul class="lead" id="ul1">
+					<h4 id="Q1">Q1: How do you like your campus?</h4>
+					<div class="well">
+					<!-- 	<div class="nav nav-pills nav-stacked"> -->
+							<li onclick="changeRowBG(this,document.getElementById('ul1'))" id="li1.1" value="4">Crazy Love</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul1'))" id="li1.2" value="3">Satisfied</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul1'))" id="li1.3" value="2">General</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul1'))" id="li1.4" value="1">Dislike</li>
+						<!-- </div> -->
+					</div>
+				</ul>
+				<ul class="lead" id="ul2">
+					<h4 id="Q2">Q2: How do you like your libray?</h4>
+					<div class="well">
+						<!-- <div class="nav nav-pills nav-stacked"> -->
+							<li onclick="changeRowBG(this,document.getElementById('ul2'))" id="li2.1" value="4">Crazy Love</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul2'))" id="li2.2" value="3">Satisfied</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul2'))" id="li2.3" value="2">General</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul2'))" id="li2.4" value="1">Dislike</li>
+						<!-- </div>
+ -->				</div>
+				</ul>
+				<ul class="lead" id="ul3">
+					<h4 id="Q3">Q3: How do you like your gym?</h4>
+					<div class="well">
+						<!-- <div class="nav nav-pills nav-stacked"> -->
+							<li onclick="changeRowBG(this,document.getElementById('ul3'))" id="li3.1" value="4">Crazy Love</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul3'))" id="li3.2" value="3">Satisfied</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul3'))" id="li3.3" value="2">General</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul3'))" id="li3.4" value="1">Dislike</li>
+						<!-- </div> -->
+					</div>
+				</ul>
+				<ul class="lead" id="ul4">
+					<h4 id="Q4">Q4: How do you like your classroom?</h4>
+					<div class="well">
+						<!-- <div class="nav nav-pills nav-stacked"> -->
+							<li onclick="changeRowBG(this,document.getElementById('ul4'))" id="li4.1" value="4">Crazy Love</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul4'))" id="li4.2" value="3">Satisfied</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul4'))" id="li4.3" value="2">General</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul4'))" id="li4.4" value="1">Dislike</li>
+						<!-- </div> -->
+					</div>
+				</ul>
+				<ul class="lead" id="ul5">
+					<h4 id="Q5">Q5: How do you like OIS?</h4>
+					<div class="well">
+						<!-- <div class="nav nav-pills nav-stacked"> -->
+							<li onclick="changeRowBG(this,document.getElementById('ul5'))" id="li5.1" value="4">Crazy Love</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul5'))" id="li5.2" value="3">Satisfied</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul5'))" id="li5.3" value="2">General</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul5'))" id="li5.4" value="1">Dislike</li>
+						<!-- </div> -->
+					</div>
+				</ul>
+				<ul class="lead" id="ul6">
+					<h4 id="Q6">Q6: How do you like your professor?</h4>
+					<div class="well">
+						<!-- <div class="nav nav-pills nav-stacked"> -->
+							<li onclick="changeRowBG(this,document.getElementById('ul6'))" id="li6.1" value="4">Crazy Love</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul6'))" id="li6.2" value="3">Satisfied</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul6'))" id="li6.3" value="2">General</li>
+							<li onclick="changeRowBG(this,document.getElementById('ul6'))" id="li6.4" value="1">Dislike</li>
+						<!-- </div> -->
+					</div>
+				</ul>
+				<br><br>
+				<div id="div1" class="lead">
+					
+				</div>
+				<div>
+					<div class="text-center">
+					<button onclick="submit()" class="btn btn-primary">Submit</button>
+					<!-- <button class="btn btn-warning">Clear</button> -->
+					</div>
+				</div>
+				<br><br>
+				<div class="text-center">
+	    			<footer class="footer1">Copyright@ Yunshu Liang</footer>
+	   			 </div>
+			</div>
+		</div>
+		<div class="col-md-2"></div>	
+	</div>
+</body>
+</html>
